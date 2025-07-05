@@ -1,22 +1,22 @@
 
-# 📚 Library Management Web Application
+Library Management Web Application
 
 A responsive, modern, and efficient Library Management System built with **React**, **TypeScript**, **Redux Toolkit**, and **Vite**. This application allows users to browse, borrow, and manage books with a clean UI and organized code structure.
 
 ---
 
-## 🚀 Tech Stack
+Tech Stack
 
 - **React** (TypeScript)
 - **Redux Toolkit** (State Management)
 - **Vite** (Fast Build Tool)
 - **Tailwind CSS** (Optional, assuming from structure)
 - **React Router DOM** (Routing)
-- **Axios** (API Calls)
+- **RTK Query** (API Calls)
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 ├── public/                   // Public assets
@@ -45,22 +45,22 @@ A responsive, modern, and efficient Library Management System built with **React
 
 ---
 
-## 🛠️ Setup Instructions
+Setup Instructions
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd <project-directory>
 ```
 
-### 2. Install Dependencies
+2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Run the Development Server
+3. Run the Development Server
 
 ```bash
 npm run dev
@@ -70,7 +70,7 @@ The application will run at `http://localhost:5173` (default Vite port).
 
 ---
 
-## 🌐 Features
+ Features
 
 ✅ Browse list of available books  
 ✅ View detailed information for each book  
@@ -82,7 +82,7 @@ The application will run at `http://localhost:5173` (default Vite port).
 
 ---
 
-## 📦 Build for Production
+ Build for Production
 
 ```bash
 npm run build
@@ -90,19 +90,19 @@ npm run build
 
 ---
 
-## ⚙️ Environment Variables
+ Environment Variables
 
 Make sure to configure your `.env` file for API endpoints or other sensitive configurations.
 
 ---
 
-## 📄 License
+ License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 🤝 Contribution
+ Contribution
 
 Pull requests and contributions are welcome!  
 Please ensure your code follows the existing style and structure.
