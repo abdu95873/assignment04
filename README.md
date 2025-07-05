@@ -1,69 +1,108 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📚 Library Management Web Application
 
-Currently, two official plugins are available:
+A responsive, modern, and efficient Library Management System built with **React**, **TypeScript**, **Redux Toolkit**, and **Vite**. This application allows users to browse, borrow, and manage books with a clean UI and organized code structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (TypeScript)
+- **Redux Toolkit** (State Management)
+- **Vite** (Fast Build Tool)
+- **Tailwind CSS** (Optional, assuming from structure)
+- **React Router DOM** (Routing)
+- **Axios** (API Calls)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📁 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+├── public/                   // Public assets
+├── src/                      // Source files
+│   ├── assets/               // Static assets (images, icons)
+│   ├── components/           // Reusable components
+│   │   ├── layout/           // Layout specific components (Navbar, Footer, etc.)
+│   │   ├── module/           // Feature-specific components (Banner, Blog, etc.)
+│   │   └── ui/               // Basic UI utilities (Mode toggler, etc.)
+│   ├── lib/                  // Utility libraries (common helpers, constants)
+│   ├── pages/                // Page-level components (AddBook, AllBooks, etc.)
+│   ├── providers/            // Context providers (if applicable)
+│   ├── redux/                // Redux Toolkit store and API slices
+│   │   ├── api/              // API slices (book APIs, borrow APIs)
+│   │   ├── features/         // Redux features
+│   │   └── store.ts          // Store configuration
+│   ├── routes/               // Route configuration
+│   ├── types.ts              // Global TypeScript types
+│   ├── App.tsx               // Root component
+│   ├── main.tsx              // App entry point
+│   └── index.css             // Global styles
+├── .env                      // Environment variables
+├── vite.config.ts            // Vite configuration
+└── package.json              // Project metadata and dependencies
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Setup Instructions
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd <project-directory>
 ```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+
+```bash
+npm run dev
+```
+
+The application will run at `http://localhost:5173` (default Vite port).
+
+---
+
+## 🌐 Features
+
+✅ Browse list of available books  
+✅ View detailed information for each book  
+✅ Borrow books and track summary  
+✅ Admin functionality to add and edit books  
+✅ Responsive layout with reusable UI components  
+✅ Optimized state management with Redux Toolkit  
+✅ Modular and scalable folder structure  
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Make sure to configure your `.env` file for API endpoints or other sensitive configurations.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🤝 Contribution
+
+Pull requests and contributions are welcome!  
+Please ensure your code follows the existing style and structure.
